@@ -1,5 +1,5 @@
 # Use the official ROCm PyTorch base image
-FROM 3.14-rc-slim-bookworm
+FROM python:3.14-rc-slim-bookworm
 
 # Set up environment variables for ROCm and PyTorch
 ENV LANG=C.UTF-8
