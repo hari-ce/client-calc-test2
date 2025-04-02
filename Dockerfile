@@ -18,12 +18,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /workspace
 
 # Install any additional Python dependencies you might need
-RUN pip install --upgrade pip && \
-    pip install numpy pandas matplotlib
+#RUN pip install --upgrade pip && \
+#    pip install numpy pandas matplotlib
 
 # Optional: Add a non-root user to avoid running as root
-RUN useradd -m -s /bin/bash docker && echo "docker:docker" | chpasswd && adduser docker sudo
-USER docker
+#RUN useradd -m -s /bin/bash docker && echo "docker:docker" | chpasswd && adduser docker sudo
+#USER docker
 
 # Set the default command to launch an interactive shell
 ENTRYPOINT ["/bin/bash"]
